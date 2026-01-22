@@ -36,4 +36,8 @@ Este projeto já está configurado para rodar automaticamente no GitHub Actions.
 
 ### Funcionamento:
 *   O script está agendado (`.github/workflows/monitor.yml`) para rodar **a cada 12 horas** (09:00 e 21:00 UTC).
-*   Você pode alterar o intervalo ditando o arquivo `.github/workflows/monitor.yml`.
+*   **Monitora IDA E VOLTA**: O workflow verifica automaticamente as duas rotas:
+    *   **Ida**: João Pessoa → Irecê
+    *   **Volta**: Irecê → João Pessoa
+*   Para alterar as datas ou rotas, edite o arquivo `.github/workflows/monitor.yml` e faça push para o GitHub.
+
