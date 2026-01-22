@@ -35,8 +35,8 @@ jobs:
         python main.py \
           --origin "Joao Pessoa - PB" \
           --destination "Irece - BA" \
-          --start "2026-02-15" \
-          --end "2026-03-15" \
+          --start "2026-03-01" \
+          --end "2026-04-13" \
           --interval 720 \
           --once \
           --telegram-token "$TELEGRAM_TOKEN" \
