@@ -1,0 +1,785 @@
+2026-01-21 12:21:08,088 - Main - INFO - ============================================================
+2026-01-21 12:21:08,089 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:21:08,089 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:21:08,089 - Main - INFO - Period: 2026-02-17 to 2026-02-17
+2026-01-21 12:21:08,089 - Main - INFO - Interval: 15 minutes
+2026-01-21 12:21:08,089 - Main - INFO - ============================================================
+2026-01-21 12:21:08,089 - Main - INFO - Starting check cycle...
+2026-01-21 12:21:08,091 - monitor - INFO - Checking availability for 1 dates...
+2026-01-21 12:21:08,092 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:21:09,318 - api_client - INFO - Request successful
+2026-01-21 12:21:09,319 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:21:09,320 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:21:10,320 - monitor - INFO - Cycle complete. found 2 tickets.
+2026-01-21 12:21:10,321 - Main - INFO - !!! FOUND 2 TICKETS !!!
+2026-01-21 12:21:10,321 - Main - INFO - Check cycle finished in 2.23 seconds.
+2026-01-21 12:21:10,321 - Main - INFO - One-time run check completed. Exiting.
+2026-01-21 12:31:23,815 - Main - INFO - ============================================================
+2026-01-21 12:31:23,815 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:31:23,815 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:31:23,815 - Main - INFO - Period: 2026-02-15 to 2026-03-15
+2026-01-21 12:31:23,815 - Main - INFO - Interval: 60 minutes
+2026-01-21 12:31:23,815 - Main - INFO - ============================================================
+2026-01-21 12:31:23,815 - Main - INFO - Starting check cycle...
+2026-01-21 12:31:23,815 - monitor - INFO - Checking availability for 29 dates...
+2026-01-21 12:31:23,815 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:31:27,108 - api_client - INFO - Request successful
+2026-01-21 12:31:27,108 - Main - ERROR - Unexpected error in main loop: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\main.py", line 44, in main
+    results = monitor.run_check_cycle(args.origin, args.destination, args.start, args.end)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\monitor.py", line 89, in run_check_cycle
+    results = self.check_availability(origin, destination, dates)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\monitor.py", line 44, in check_availability
+    for trip in trips_data["trips"]:
+                ~~~~~~~~~~^^^^^^^^^
+TypeError: 'NoneType' object is not iterable
+2026-01-21 12:32:27,109 - Main - INFO - Starting check cycle...
+2026-01-21 12:32:27,109 - monitor - INFO - Checking availability for 29 dates...
+2026-01-21 12:32:27,109 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:32:27,489 - api_client - INFO - Request successful
+2026-01-21 12:32:27,490 - Main - ERROR - Unexpected error in main loop: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\main.py", line 44, in main
+    results = monitor.run_check_cycle(args.origin, args.destination, args.start, args.end)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\monitor.py", line 89, in run_check_cycle
+    dates = self.generate_dates(start_date, end_date)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Vinicius Teixeira\Documents\webScripingidJovem\monitor.py", line 44, in check_availability
+TypeError: 'NoneType' object is not iterable
+2026-01-21 12:32:36,646 - Main - INFO - ============================================================
+2026-01-21 12:32:36,646 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:32:36,646 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:32:36,646 - Main - INFO - Period: 2026-02-15 to 2026-03-31
+2026-01-21 12:32:36,646 - Main - INFO - Interval: 60 minutes
+2026-01-21 12:32:36,646 - Main - INFO - ============================================================
+2026-01-21 12:32:36,646 - Main - INFO - Starting check cycle...
+2026-01-21 12:32:36,651 - monitor - INFO - Checking availability for 45 dates...
+2026-01-21 12:32:36,651 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:32:37,946 - api_client - INFO - Request successful
+2026-01-21 12:32:37,946 - monitor - WARNING - No data for 2026-02-15
+2026-01-21 12:32:37,946 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-21 12:32:38,380 - api_client - INFO - Request successful
+2026-01-21 12:32:38,380 - monitor - WARNING - No data for 2026-02-16
+2026-01-21 12:32:38,380 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:32:43,708 - api_client - INFO - Request successful
+2026-01-21 12:32:43,708 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:32:43,708 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:32:44,710 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-21 12:32:46,959 - api_client - INFO - Request successful
+2026-01-21 12:32:46,959 - monitor - WARNING - No data for 2026-02-18
+2026-01-21 12:32:46,959 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-21 12:32:47,812 - api_client - INFO - Request successful
+2026-01-21 12:32:47,821 - monitor - WARNING - No data for 2026-02-19
+2026-01-21 12:32:47,822 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-21 12:32:51,146 - Main - INFO - Stopping monitor...
+2026-01-21 12:32:55,506 - Main - INFO - ============================================================
+2026-01-21 12:32:55,506 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:32:55,506 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:32:55,507 - Main - INFO - Period: 2026-02-15 to 2026-03-15
+2026-01-21 12:32:55,507 - Main - INFO - Interval: 60 minutes
+2026-01-21 12:32:55,507 - Main - INFO - ============================================================
+2026-01-21 12:32:55,507 - Main - INFO - Starting check cycle...
+2026-01-21 12:32:55,509 - monitor - INFO - Checking availability for 29 dates...
+2026-01-21 12:32:55,509 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:32:56,617 - api_client - INFO - Request successful
+2026-01-21 12:32:56,617 - monitor - WARNING - No data for 2026-02-15
+2026-01-21 12:32:56,617 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-21 12:32:56,970 - api_client - INFO - Request successful
+2026-01-21 12:32:56,970 - monitor - WARNING - No data for 2026-02-16
+2026-01-21 12:32:56,970 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:32:57,212 - api_client - INFO - Request successful
+2026-01-21 12:32:57,214 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:32:57,215 - monitor - INFO - FOUND! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:32:58,215 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-21 12:32:58,409 - api_client - INFO - Request successful
+2026-01-21 12:32:58,409 - monitor - WARNING - No data for 2026-02-18
+2026-01-21 12:32:58,410 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-21 12:32:58,905 - api_client - INFO - Request successful
+2026-01-21 12:32:58,905 - monitor - WARNING - No data for 2026-02-19
+2026-01-21 12:32:58,905 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-21 12:32:59,099 - api_client - INFO - Request successful
+2026-01-21 12:32:59,099 - monitor - INFO - FOUND! 2026-02-20T10:33:00 - 50% - R$ 232.06
+2026-01-21 12:32:59,099 - monitor - INFO - FOUND! 2026-02-20T10:33:00 - 50% - R$ 227.96
+2026-01-21 12:33:00,101 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-21T00:00:00.000Z
+2026-01-21 12:33:00,753 - api_client - INFO - Request successful
+2026-01-21 12:33:00,753 - monitor - WARNING - No data for 2026-02-21
+2026-01-21 12:33:00,753 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-22T00:00:00.000Z
+2026-01-21 12:33:01,169 - api_client - INFO - Request successful
+2026-01-21 12:33:01,169 - monitor - WARNING - No data for 2026-02-22
+2026-01-21 12:33:01,169 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-23T00:00:00.000Z
+2026-01-21 12:33:01,603 - api_client - INFO - Request successful
+2026-01-21 12:33:01,603 - monitor - WARNING - No data for 2026-02-23
+2026-01-21 12:33:01,603 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-24T00:00:00.000Z
+2026-01-21 12:33:02,014 - api_client - INFO - Request successful
+2026-01-21 12:33:02,014 - monitor - WARNING - No data for 2026-02-24
+2026-01-21 12:33:02,014 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-25T00:00:00.000Z
+2026-01-21 12:33:02,434 - api_client - INFO - Request successful
+2026-01-21 12:33:02,434 - monitor - WARNING - No data for 2026-02-25
+2026-01-21 12:33:02,434 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-26T00:00:00.000Z
+2026-01-21 12:33:02,762 - api_client - INFO - Request successful
+2026-01-21 12:33:02,762 - monitor - WARNING - No data for 2026-02-26
+2026-01-21 12:33:02,762 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-27T00:00:00.000Z
+2026-01-21 12:33:03,074 - api_client - INFO - Request successful
+2026-01-21 12:33:03,074 - monitor - WARNING - No data for 2026-02-27
+2026-01-21 12:33:03,074 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-28T00:00:00.000Z
+2026-01-21 12:33:03,450 - api_client - INFO - Request successful
+2026-01-21 12:33:03,450 - monitor - WARNING - No data for 2026-02-28
+2026-01-21 12:33:03,450 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-21 12:33:03,853 - api_client - INFO - Request successful
+2026-01-21 12:33:03,853 - monitor - WARNING - No data for 2026-03-01
+2026-01-21 12:33:03,853 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-21 12:33:04,063 - api_client - INFO - Request successful
+2026-01-21 12:33:04,063 - monitor - WARNING - No data for 2026-03-02
+2026-01-21 12:33:04,063 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-21 12:33:04,301 - api_client - INFO - Request successful
+2026-01-21 12:33:04,301 - monitor - WARNING - No data for 2026-03-03
+2026-01-21 12:33:04,301 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-21 12:33:04,892 - api_client - INFO - Request successful
+2026-01-21 12:33:04,892 - monitor - WARNING - No data for 2026-03-04
+2026-01-21 12:33:04,892 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-21 12:33:05,149 - api_client - INFO - Request successful
+2026-01-21 12:33:05,149 - monitor - WARNING - No data for 2026-03-05
+2026-01-21 12:33:05,149 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-21 12:33:05,442 - api_client - INFO - Request successful
+2026-01-21 12:33:05,442 - monitor - WARNING - No data for 2026-03-06
+2026-01-21 12:33:05,442 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-21 12:33:05,727 - api_client - INFO - Request successful
+2026-01-21 12:33:05,728 - monitor - WARNING - No data for 2026-03-07
+2026-01-21 12:33:05,728 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-21 12:33:05,946 - api_client - INFO - Request successful
+2026-01-21 12:33:05,946 - monitor - WARNING - No data for 2026-03-08
+2026-01-21 12:33:05,946 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-21 12:33:06,176 - api_client - INFO - Request successful
+2026-01-21 12:33:06,177 - monitor - WARNING - No data for 2026-03-09
+2026-01-21 12:33:06,177 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-21 12:33:06,512 - api_client - INFO - Request successful
+2026-01-21 12:33:06,512 - monitor - WARNING - No data for 2026-03-10
+2026-01-21 12:33:06,512 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-21 12:33:06,713 - api_client - INFO - Request successful
+2026-01-21 12:33:06,725 - monitor - WARNING - No data for 2026-03-11
+2026-01-21 12:33:06,725 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-21 12:33:07,012 - api_client - INFO - Request successful
+2026-01-21 12:33:07,012 - monitor - WARNING - No data for 2026-03-12
+2026-01-21 12:33:07,012 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-21 12:33:07,266 - api_client - INFO - Request successful
+2026-01-21 12:33:07,266 - monitor - WARNING - No data for 2026-03-13
+2026-01-21 12:33:07,267 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-21 12:33:07,603 - api_client - INFO - Request successful
+2026-01-21 12:33:07,603 - monitor - WARNING - No data for 2026-03-14
+2026-01-21 12:33:07,603 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-21 12:33:07,880 - api_client - INFO - Request successful
+2026-01-21 12:33:07,880 - monitor - WARNING - No data for 2026-03-15
+2026-01-21 12:33:07,880 - monitor - INFO - Cycle complete. found 4 tickets.
+2026-01-21 12:33:07,880 - Main - INFO - !!! FOUND 4 TICKETS !!!
+2026-01-21 12:33:07,880 - Main - INFO - Check cycle finished in 12.37 seconds.
+2026-01-21 12:33:07,880 - Main - INFO - Waiting 60 minutes for next check...
+2026-01-21 12:51:14,903 - Main - INFO - ============================================================
+2026-01-21 12:51:14,903 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:51:14,903 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:51:14,903 - Main - INFO - Period: 2026-03-01 to 2026-03-31
+2026-01-21 12:51:14,912 - Main - INFO - Interval: 15 minutes
+2026-01-21 12:51:14,912 - Main - INFO - Telegram notification ENABLED
+2026-01-21 12:51:14,912 - Main - INFO - ============================================================
+2026-01-21 12:51:14,912 - Main - INFO - Starting check cycle...
+2026-01-21 12:51:14,912 - monitor - INFO - Checking availability for 31 dates...
+2026-01-21 12:51:14,912 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-21 12:51:16,184 - api_client - INFO - Request successful
+2026-01-21 12:51:16,184 - monitor - WARNING - No data for 2026-03-01
+2026-01-21 12:51:16,184 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-21 12:51:16,529 - api_client - INFO - Request successful
+2026-01-21 12:51:16,529 - monitor - WARNING - No data for 2026-03-02
+2026-01-21 12:51:16,530 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-21 12:51:16,893 - api_client - INFO - Request successful
+2026-01-21 12:51:16,893 - monitor - WARNING - No data for 2026-03-03
+2026-01-21 12:51:16,893 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-21 12:51:17,117 - api_client - INFO - Request successful
+2026-01-21 12:51:17,117 - monitor - WARNING - No data for 2026-03-04
+2026-01-21 12:51:17,117 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-21 12:51:17,333 - api_client - INFO - Request successful
+2026-01-21 12:51:17,333 - monitor - WARNING - No data for 2026-03-05
+2026-01-21 12:51:17,333 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-21 12:51:17,631 - api_client - INFO - Request successful
+2026-01-21 12:51:17,631 - monitor - WARNING - No data for 2026-03-06
+2026-01-21 12:51:17,631 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-21 12:51:18,394 - api_client - INFO - Request successful
+2026-01-21 12:51:18,394 - monitor - WARNING - No data for 2026-03-07
+2026-01-21 12:51:18,394 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-21 12:51:18,663 - api_client - INFO - Request successful
+2026-01-21 12:51:18,663 - monitor - WARNING - No data for 2026-03-08
+2026-01-21 12:51:18,663 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-21 12:51:19,053 - api_client - INFO - Request successful
+2026-01-21 12:51:19,053 - monitor - WARNING - No data for 2026-03-09
+2026-01-21 12:51:19,053 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-21 12:51:19,518 - api_client - INFO - Request successful
+2026-01-21 12:51:19,518 - monitor - WARNING - No data for 2026-03-10
+2026-01-21 12:51:19,518 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-21 12:51:19,798 - api_client - INFO - Request successful
+2026-01-21 12:51:19,799 - monitor - WARNING - No data for 2026-03-11
+2026-01-21 12:51:19,799 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-21 12:51:20,083 - api_client - INFO - Request successful
+2026-01-21 12:51:20,083 - monitor - WARNING - No data for 2026-03-12
+2026-01-21 12:51:20,083 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-21 12:51:20,362 - api_client - INFO - Request successful
+2026-01-21 12:51:20,362 - monitor - WARNING - No data for 2026-03-13
+2026-01-21 12:51:20,362 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-21 12:51:20,727 - api_client - INFO - Request successful
+2026-01-21 12:51:20,727 - monitor - WARNING - No data for 2026-03-14
+2026-01-21 12:51:20,727 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-21 12:51:21,037 - api_client - INFO - Request successful
+2026-01-21 12:51:21,037 - monitor - WARNING - No data for 2026-03-15
+2026-01-21 12:51:21,037 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-16T00:00:00.000Z
+2026-01-21 12:51:21,284 - api_client - INFO - Request successful
+2026-01-21 12:51:21,284 - monitor - WARNING - No data for 2026-03-16
+2026-01-21 12:51:21,284 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-17T00:00:00.000Z
+2026-01-21 12:51:21,584 - api_client - INFO - Request successful
+2026-01-21 12:51:21,595 - monitor - WARNING - No data for 2026-03-17
+2026-01-21 12:51:21,595 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-18T00:00:00.000Z
+2026-01-21 12:51:21,813 - api_client - INFO - Request successful
+2026-01-21 12:51:21,813 - monitor - WARNING - No data for 2026-03-18
+2026-01-21 12:51:21,813 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-19T00:00:00.000Z
+2026-01-21 12:51:22,103 - api_client - INFO - Request successful
+2026-01-21 12:51:22,103 - monitor - WARNING - No data for 2026-03-19
+2026-01-21 12:51:22,103 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-20T00:00:00.000Z
+2026-01-21 12:51:22,391 - api_client - INFO - Request successful
+2026-01-21 12:51:22,391 - monitor - WARNING - No data for 2026-03-20
+2026-01-21 12:51:22,391 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-21T00:00:00.000Z
+2026-01-21 12:51:22,594 - api_client - INFO - Request successful
+2026-01-21 12:51:22,595 - monitor - WARNING - No data for 2026-03-21
+2026-01-21 12:51:22,595 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-22T00:00:00.000Z
+2026-01-21 12:51:22,896 - api_client - INFO - Request successful
+2026-01-21 12:51:22,896 - monitor - WARNING - No data for 2026-03-22
+2026-01-21 12:51:22,896 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-23T00:00:00.000Z
+2026-01-21 12:51:23,372 - api_client - INFO - Request successful
+2026-01-21 12:51:23,372 - monitor - WARNING - No data for 2026-03-23
+2026-01-21 12:51:23,372 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-24T00:00:00.000Z
+2026-01-21 12:51:23,806 - api_client - INFO - Request successful
+2026-01-21 12:51:23,806 - monitor - WARNING - No data for 2026-03-24
+2026-01-21 12:51:23,807 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-25T00:00:00.000Z
+2026-01-21 12:51:24,080 - api_client - INFO - Request successful
+2026-01-21 12:51:24,080 - monitor - WARNING - No data for 2026-03-25
+2026-01-21 12:51:24,080 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-26T00:00:00.000Z
+2026-01-21 12:51:24,373 - api_client - INFO - Request successful
+2026-01-21 12:51:24,373 - monitor - WARNING - No data for 2026-03-26
+2026-01-21 12:51:24,374 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-27T00:00:00.000Z
+2026-01-21 12:51:24,603 - api_client - INFO - Request successful
+2026-01-21 12:51:24,603 - monitor - WARNING - No data for 2026-03-27
+2026-01-21 12:51:24,603 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-28T00:00:00.000Z
+2026-01-21 12:51:25,003 - api_client - INFO - Request successful
+2026-01-21 12:51:25,003 - monitor - WARNING - No data for 2026-03-28
+2026-01-21 12:51:25,003 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-29T00:00:00.000Z
+2026-01-21 12:51:25,386 - api_client - INFO - Request successful
+2026-01-21 12:51:25,386 - monitor - WARNING - No data for 2026-03-29
+2026-01-21 12:51:25,386 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-30T00:00:00.000Z
+2026-01-21 12:51:25,928 - api_client - INFO - Request successful
+2026-01-21 12:51:25,928 - monitor - WARNING - No data for 2026-03-30
+2026-01-21 12:51:25,928 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-31T00:00:00.000Z
+2026-01-21 12:51:26,284 - api_client - INFO - Request successful
+2026-01-21 12:51:26,284 - monitor - WARNING - No data for 2026-03-31
+2026-01-21 12:51:26,284 - monitor - INFO - Cycle complete. No new tickets found.
+2026-01-21 12:51:26,284 - Main - INFO - Check cycle finished in 11.37 seconds.
+2026-01-21 12:51:26,284 - Main - INFO - Waiting 15 minutes for next check...
+2026-01-21 12:51:43,381 - Main - INFO - Stopping monitor...
+2026-01-21 12:52:07,859 - Main - INFO - ============================================================
+2026-01-21 12:52:07,859 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:52:07,859 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:52:07,859 - Main - INFO - Period: 2026-02-17 to 2026-02-17
+2026-01-21 12:52:07,859 - Main - INFO - Interval: 15 minutes
+2026-01-21 12:52:07,860 - Main - INFO - Telegram notification ENABLED
+2026-01-21 12:52:07,860 - Main - INFO - ============================================================
+2026-01-21 12:52:07,860 - Main - INFO - Starting check cycle...
+2026-01-21 12:52:07,861 - monitor - INFO - Checking availability for 1 dates...
+2026-01-21 12:52:07,861 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:52:08,996 - api_client - INFO - Request successful
+2026-01-21 12:52:09,003 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:52:09,003 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:52:09,009 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:52:09,009 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:52:10,010 - monitor - INFO - Cycle complete. found 2 NEW tickets.
+2026-01-21 12:52:11,284 - notifier - INFO - Telegram notification sent successfully.
+2026-01-21 12:52:11,284 - Main - INFO - !!! FOUND 2 TICKETS !!!
+2026-01-21 12:52:11,284 - Main - INFO - Check cycle finished in 3.42 seconds.
+2026-01-21 12:52:11,284 - Main - INFO - One-time run check completed. Exiting.
+2026-01-21 12:53:13,052 - Main - INFO - Stopping monitor...
+2026-01-21 12:53:20,965 - Main - INFO - ============================================================
+2026-01-21 12:53:20,965 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:53:20,965 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:53:20,965 - Main - INFO - Period: 2026-02-15 to 2026-03-15
+2026-01-21 12:53:20,965 - Main - INFO - Interval: 60 minutes
+2026-01-21 12:53:20,965 - Main - INFO - Telegram notification DISABLED (no token provided)
+2026-01-21 12:53:20,965 - Main - INFO - ============================================================
+2026-01-21 12:53:20,965 - Main - INFO - Starting check cycle...
+2026-01-21 12:53:20,965 - monitor - INFO - Checking availability for 29 dates...
+2026-01-21 12:53:20,965 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:53:22,004 - api_client - INFO - Request successful
+2026-01-21 12:53:22,004 - monitor - WARNING - No data for 2026-02-15
+2026-01-21 12:53:22,005 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-21 12:53:22,230 - api_client - INFO - Request successful
+2026-01-21 12:53:22,230 - monitor - WARNING - No data for 2026-02-16
+2026-01-21 12:53:22,230 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:53:22,613 - api_client - INFO - Request successful
+2026-01-21 12:53:22,613 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:53:22,613 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:53:22,633 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:53:22,633 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:53:23,634 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-21 12:53:24,029 - api_client - INFO - Request successful
+2026-01-21 12:53:24,029 - monitor - WARNING - No data for 2026-02-18
+2026-01-21 12:53:24,029 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-21 12:53:24,392 - api_client - INFO - Request successful
+2026-01-21 12:53:24,392 - monitor - WARNING - No data for 2026-02-19
+2026-01-21 12:53:24,392 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-21 12:53:25,153 - api_client - INFO - Request successful
+2026-01-21 12:53:25,164 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 50%
+2026-01-21 12:53:25,164 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 50% - R$ 232.06
+2026-01-21 12:53:25,175 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 50%
+2026-01-21 12:53:25,175 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 50% - R$ 227.96
+2026-01-21 12:53:26,176 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-21T00:00:00.000Z
+2026-01-21 12:53:38,011 - api_client - INFO - Request successful
+2026-01-21 12:53:38,011 - monitor - WARNING - No data for 2026-02-21
+2026-01-21 12:53:38,011 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-22T00:00:00.000Z
+2026-01-21 12:53:38,433 - api_client - INFO - Request successful
+2026-01-21 12:53:38,433 - monitor - WARNING - No data for 2026-02-22
+2026-01-21 12:53:38,433 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-23T00:00:00.000Z
+2026-01-21 12:53:38,683 - api_client - INFO - Request successful
+2026-01-21 12:53:38,683 - monitor - WARNING - No data for 2026-02-23
+2026-01-21 12:53:38,683 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-24T00:00:00.000Z
+2026-01-21 12:53:48,429 - api_client - INFO - Request successful
+2026-01-21 12:53:48,429 - monitor - WARNING - No data for 2026-02-24
+2026-01-21 12:53:48,429 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-25T00:00:00.000Z
+2026-01-21 12:53:48,844 - api_client - INFO - Request successful
+2026-01-21 12:53:48,844 - monitor - WARNING - No data for 2026-02-25
+2026-01-21 12:53:48,844 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-26T00:00:00.000Z
+2026-01-21 12:53:49,781 - api_client - INFO - Request successful
+2026-01-21 12:53:49,781 - monitor - WARNING - No data for 2026-02-26
+2026-01-21 12:53:49,781 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-27T00:00:00.000Z
+2026-01-21 12:53:50,041 - api_client - INFO - Request successful
+2026-01-21 12:53:50,041 - monitor - WARNING - No data for 2026-02-27
+2026-01-21 12:53:50,041 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-28T00:00:00.000Z
+2026-01-21 12:53:50,688 - api_client - INFO - Request successful
+2026-01-21 12:53:50,688 - monitor - WARNING - No data for 2026-02-28
+2026-01-21 12:53:50,688 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-21 12:54:02,517 - api_client - INFO - Request successful
+2026-01-21 12:54:02,517 - monitor - WARNING - No data for 2026-03-01
+2026-01-21 12:54:02,517 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-21 12:54:02,834 - api_client - INFO - Request successful
+2026-01-21 12:54:02,834 - monitor - WARNING - No data for 2026-03-02
+2026-01-21 12:54:02,834 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-21 12:54:11,746 - api_client - INFO - Request successful
+2026-01-21 12:54:11,753 - monitor - WARNING - No data for 2026-03-03
+2026-01-21 12:54:11,753 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-21 12:54:20,029 - api_client - INFO - Request successful
+2026-01-21 12:54:20,029 - monitor - WARNING - No data for 2026-03-04
+2026-01-21 12:54:20,029 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-21 12:54:20,421 - api_client - INFO - Request successful
+2026-01-21 12:54:20,421 - monitor - WARNING - No data for 2026-03-05
+2026-01-21 12:54:20,421 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-21 12:54:20,655 - api_client - INFO - Request successful
+2026-01-21 12:54:20,655 - monitor - WARNING - No data for 2026-03-06
+2026-01-21 12:54:20,655 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-21 12:54:21,130 - api_client - INFO - Request successful
+2026-01-21 12:54:21,130 - monitor - WARNING - No data for 2026-03-07
+2026-01-21 12:54:21,130 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-21 12:54:21,369 - api_client - INFO - Request successful
+2026-01-21 12:54:21,369 - monitor - WARNING - No data for 2026-03-08
+2026-01-21 12:54:21,369 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-21 12:54:21,606 - api_client - INFO - Request successful
+2026-01-21 12:54:21,606 - monitor - WARNING - No data for 2026-03-09
+2026-01-21 12:54:21,607 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-21 12:54:21,852 - api_client - INFO - Request successful
+2026-01-21 12:54:21,853 - monitor - WARNING - No data for 2026-03-10
+2026-01-21 12:54:21,853 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-21 12:54:22,062 - api_client - INFO - Request successful
+2026-01-21 12:54:22,062 - monitor - WARNING - No data for 2026-03-11
+2026-01-21 12:54:22,062 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-21 12:54:22,277 - api_client - INFO - Request successful
+2026-01-21 12:54:22,277 - monitor - WARNING - No data for 2026-03-12
+2026-01-21 12:54:22,277 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-21 12:54:22,532 - api_client - INFO - Request successful
+2026-01-21 12:54:22,532 - monitor - WARNING - No data for 2026-03-13
+2026-01-21 12:54:22,533 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-21 12:54:22,853 - api_client - INFO - Request successful
+2026-01-21 12:54:22,853 - monitor - WARNING - No data for 2026-03-14
+2026-01-21 12:54:22,853 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-21 12:54:23,067 - api_client - INFO - Request successful
+2026-01-21 12:54:23,067 - monitor - WARNING - No data for 2026-03-15
+2026-01-21 12:54:23,067 - monitor - INFO - Cycle complete. found 4 NEW tickets.
+2026-01-21 12:54:23,067 - notifier - WARNING - Telegram credentials not configured. Skipping notification.
+2026-01-21 12:54:23,067 - Main - INFO - !!! FOUND 4 TICKETS !!!
+2026-01-21 12:54:23,067 - Main - INFO - Check cycle finished in 62.10 seconds.
+2026-01-21 12:54:23,067 - Main - INFO - Waiting 60 minutes for next check...
+2026-01-21 12:54:33,624 - Main - INFO - Stopping monitor...
+2026-01-21 12:55:11,496 - Main - INFO - ============================================================
+2026-01-21 12:55:11,496 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-21 12:55:11,496 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-21 12:55:11,496 - Main - INFO - Period: 2026-02-15 to 2026-03-31
+2026-01-21 12:55:11,496 - Main - INFO - Interval: 15 minutes
+2026-01-21 12:55:11,496 - Main - INFO - Telegram notification ENABLED
+2026-01-21 12:55:11,496 - Main - INFO - ============================================================
+2026-01-21 12:55:11,496 - Main - INFO - Starting check cycle...
+2026-01-21 12:55:11,503 - monitor - INFO - Checking availability for 45 dates...
+2026-01-21 12:55:11,503 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-21 12:55:12,574 - api_client - INFO - Request successful
+2026-01-21 12:55:12,574 - monitor - WARNING - No data for 2026-02-15
+2026-01-21 12:55:12,574 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-21 12:55:12,810 - api_client - INFO - Request successful
+2026-01-21 12:55:12,810 - monitor - WARNING - No data for 2026-02-16
+2026-01-21 12:55:12,810 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-21 12:55:13,288 - api_client - INFO - Request successful
+2026-01-21 12:55:13,296 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:55:13,296 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-21 12:55:13,304 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-21 12:55:13,304 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-21 12:55:14,305 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-21 12:55:15,034 - api_client - INFO - Request successful
+2026-01-21 12:55:15,034 - monitor - WARNING - No data for 2026-02-18
+2026-01-21 12:55:15,034 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-21 12:55:15,583 - api_client - INFO - Request successful
+2026-01-21 12:55:15,583 - monitor - WARNING - No data for 2026-02-19
+2026-01-21 12:55:15,583 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-21 12:55:16,113 - api_client - INFO - Request successful
+2026-01-21 12:55:16,124 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 50%
+2026-01-21 12:55:16,124 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 50% - R$ 232.06
+2026-01-21 12:55:16,130 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 50%
+2026-01-21 12:55:16,130 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 50% - R$ 227.96
+2026-01-21 12:55:17,132 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-21T00:00:00.000Z
+2026-01-21 12:55:17,383 - api_client - INFO - Request successful
+2026-01-21 12:55:17,383 - monitor - WARNING - No data for 2026-02-21
+2026-01-21 12:55:17,383 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-22T00:00:00.000Z
+2026-01-21 12:55:17,667 - api_client - INFO - Request successful
+2026-01-21 12:55:17,667 - monitor - WARNING - No data for 2026-02-22
+2026-01-21 12:55:17,667 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-23T00:00:00.000Z
+2026-01-21 12:55:17,981 - api_client - INFO - Request successful
+2026-01-21 12:55:17,981 - monitor - WARNING - No data for 2026-02-23
+2026-01-21 12:55:17,981 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-24T00:00:00.000Z
+2026-01-21 12:55:18,223 - api_client - INFO - Request successful
+2026-01-21 12:55:18,223 - monitor - WARNING - No data for 2026-02-24
+2026-01-21 12:55:18,223 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-25T00:00:00.000Z
+2026-01-21 12:55:18,435 - api_client - INFO - Request successful
+2026-01-21 12:55:18,435 - monitor - WARNING - No data for 2026-02-25
+2026-01-21 12:55:18,437 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-26T00:00:00.000Z
+2026-01-21 12:55:18,689 - api_client - INFO - Request successful
+2026-01-21 12:55:18,689 - monitor - WARNING - No data for 2026-02-26
+2026-01-21 12:55:18,690 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-27T00:00:00.000Z
+2026-01-21 12:55:18,954 - api_client - INFO - Request successful
+2026-01-21 12:55:18,954 - monitor - WARNING - No data for 2026-02-27
+2026-01-21 12:55:18,954 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-28T00:00:00.000Z
+2026-01-21 12:55:19,171 - api_client - INFO - Request successful
+2026-01-21 12:55:19,171 - monitor - WARNING - No data for 2026-02-28
+2026-01-21 12:55:19,171 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-21 12:55:19,453 - api_client - INFO - Request successful
+2026-01-21 12:55:19,453 - monitor - WARNING - No data for 2026-03-01
+2026-01-21 12:55:19,454 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-21 12:55:19,663 - api_client - INFO - Request successful
+2026-01-21 12:55:19,663 - monitor - WARNING - No data for 2026-03-02
+2026-01-21 12:55:19,663 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-21 12:55:19,893 - api_client - INFO - Request successful
+2026-01-21 12:55:19,893 - monitor - WARNING - No data for 2026-03-03
+2026-01-21 12:55:19,893 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-21 12:55:20,115 - api_client - INFO - Request successful
+2026-01-21 12:55:20,115 - monitor - WARNING - No data for 2026-03-04
+2026-01-21 12:55:20,116 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-21 12:55:20,327 - api_client - INFO - Request successful
+2026-01-21 12:55:20,327 - monitor - WARNING - No data for 2026-03-05
+2026-01-21 12:55:20,327 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-21 12:55:20,596 - api_client - INFO - Request successful
+2026-01-21 12:55:20,596 - monitor - WARNING - No data for 2026-03-06
+2026-01-21 12:55:20,596 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-21 12:55:20,878 - api_client - INFO - Request successful
+2026-01-21 12:55:20,878 - monitor - WARNING - No data for 2026-03-07
+2026-01-21 12:55:20,878 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-21 12:55:21,097 - api_client - INFO - Request successful
+2026-01-21 12:55:21,097 - monitor - WARNING - No data for 2026-03-08
+2026-01-21 12:55:21,097 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-21 12:55:21,315 - api_client - INFO - Request successful
+2026-01-21 12:55:21,315 - monitor - WARNING - No data for 2026-03-09
+2026-01-21 12:55:21,315 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-21 12:55:21,530 - api_client - INFO - Request successful
+2026-01-21 12:55:21,530 - monitor - WARNING - No data for 2026-03-10
+2026-01-21 12:55:21,530 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-21 12:55:21,876 - api_client - INFO - Request successful
+2026-01-21 12:55:21,876 - monitor - WARNING - No data for 2026-03-11
+2026-01-21 12:55:21,877 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-21 12:55:22,179 - api_client - INFO - Request successful
+2026-01-21 12:55:22,179 - monitor - WARNING - No data for 2026-03-12
+2026-01-21 12:55:22,179 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-21 12:55:22,411 - api_client - INFO - Request successful
+2026-01-21 12:55:22,411 - monitor - WARNING - No data for 2026-03-13
+2026-01-21 12:55:22,412 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-21 12:55:22,618 - api_client - INFO - Request successful
+2026-01-21 12:55:22,618 - monitor - WARNING - No data for 2026-03-14
+2026-01-21 12:55:22,618 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-21 12:55:22,863 - api_client - INFO - Request successful
+2026-01-21 12:55:22,879 - monitor - WARNING - No data for 2026-03-15
+2026-01-21 12:55:22,879 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-16T00:00:00.000Z
+2026-01-21 12:55:23,184 - api_client - INFO - Request successful
+2026-01-21 12:55:23,184 - monitor - WARNING - No data for 2026-03-16
+2026-01-21 12:55:23,184 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-17T00:00:00.000Z
+2026-01-21 12:55:23,474 - api_client - INFO - Request successful
+2026-01-21 12:55:23,474 - monitor - WARNING - No data for 2026-03-17
+2026-01-21 12:55:23,475 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-18T00:00:00.000Z
+2026-01-21 12:55:23,746 - api_client - INFO - Request successful
+2026-01-21 12:55:23,746 - monitor - WARNING - No data for 2026-03-18
+2026-01-21 12:55:23,746 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-19T00:00:00.000Z
+2026-01-21 12:55:24,034 - api_client - INFO - Request successful
+2026-01-21 12:55:24,034 - monitor - WARNING - No data for 2026-03-19
+2026-01-21 12:55:24,034 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-20T00:00:00.000Z
+2026-01-21 12:55:24,440 - api_client - INFO - Request successful
+2026-01-21 12:55:24,440 - monitor - WARNING - No data for 2026-03-20
+2026-01-21 12:55:24,440 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-21T00:00:00.000Z
+2026-01-21 12:55:24,734 - api_client - INFO - Request successful
+2026-01-21 12:55:24,734 - monitor - WARNING - No data for 2026-03-21
+2026-01-21 12:55:24,734 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-22T00:00:00.000Z
+2026-01-21 12:55:24,996 - api_client - INFO - Request successful
+2026-01-21 12:55:24,996 - monitor - WARNING - No data for 2026-03-22
+2026-01-21 12:55:25,003 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-23T00:00:00.000Z
+2026-01-21 12:55:25,253 - api_client - INFO - Request successful
+2026-01-21 12:55:25,253 - monitor - WARNING - No data for 2026-03-23
+2026-01-21 12:55:25,253 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-24T00:00:00.000Z
+2026-01-21 12:55:25,463 - api_client - INFO - Request successful
+2026-01-21 12:55:25,463 - monitor - WARNING - No data for 2026-03-24
+2026-01-21 12:55:25,463 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-25T00:00:00.000Z
+2026-01-21 12:55:25,715 - api_client - INFO - Request successful
+2026-01-21 12:55:25,716 - monitor - WARNING - No data for 2026-03-25
+2026-01-21 12:55:25,716 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-26T00:00:00.000Z
+2026-01-21 12:55:26,012 - api_client - INFO - Request successful
+2026-01-21 12:55:26,012 - monitor - WARNING - No data for 2026-03-26
+2026-01-21 12:55:26,012 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-27T00:00:00.000Z
+2026-01-21 12:55:26,281 - api_client - INFO - Request successful
+2026-01-21 12:55:26,281 - monitor - WARNING - No data for 2026-03-27
+2026-01-21 12:55:26,281 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-28T00:00:00.000Z
+2026-01-21 12:55:26,722 - api_client - INFO - Request successful
+2026-01-21 12:55:26,722 - monitor - WARNING - No data for 2026-03-28
+2026-01-21 12:55:26,722 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-29T00:00:00.000Z
+2026-01-21 12:55:26,962 - api_client - INFO - Request successful
+2026-01-21 12:55:26,962 - monitor - WARNING - No data for 2026-03-29
+2026-01-21 12:55:26,962 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-30T00:00:00.000Z
+2026-01-21 12:55:27,162 - api_client - INFO - Request successful
+2026-01-21 12:55:27,162 - monitor - WARNING - No data for 2026-03-30
+2026-01-21 12:55:27,162 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-31T00:00:00.000Z
+2026-01-21 12:55:27,363 - api_client - INFO - Request successful
+2026-01-21 12:55:27,363 - monitor - WARNING - No data for 2026-03-31
+2026-01-21 12:55:27,363 - monitor - INFO - Cycle complete. found 4 NEW tickets.
+2026-01-21 12:55:28,619 - notifier - INFO - Telegram notification sent successfully.
+2026-01-21 12:55:28,619 - Main - INFO - !!! FOUND 4 TICKETS !!!
+2026-01-21 12:55:28,619 - Main - INFO - Check cycle finished in 17.12 seconds.
+2026-01-21 12:55:28,619 - Main - INFO - Waiting 15 minutes for next check...
+2026-01-22 09:04:00,228 - Main - INFO - ============================================================
+2026-01-22 09:04:00,228 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-22 09:04:00,228 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-22 09:04:00,228 - Main - INFO - Period: 2026-02-15 to 2026-03-15
+2026-01-22 09:04:00,228 - Main - INFO - Interval: 60 minutes
+2026-01-22 09:04:00,228 - Main - INFO - Telegram notification DISABLED (no token provided)
+2026-01-22 09:04:00,228 - Main - INFO - ============================================================
+2026-01-22 09:04:00,228 - Main - INFO - Starting check cycle...
+2026-01-22 09:04:00,228 - monitor - INFO - Checking availability for 29 dates...
+2026-01-22 09:04:00,228 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-22 09:04:01,601 - api_client - INFO - Request successful
+2026-01-22 09:04:01,601 - monitor - WARNING - No data for 2026-02-15
+2026-01-22 09:04:01,601 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-22 09:04:01,996 - api_client - INFO - Request successful
+2026-01-22 09:04:01,996 - monitor - WARNING - No data for 2026-02-16
+2026-01-22 09:04:01,996 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-22 09:04:03,151 - api_client - INFO - Request successful
+2026-01-22 09:04:03,168 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-22 09:04:03,168 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-22 09:04:03,178 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-22 09:04:03,180 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-22 09:04:04,181 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-22 09:04:08,519 - api_client - INFO - Request successful
+2026-01-22 09:04:08,519 - monitor - WARNING - No data for 2026-02-18
+2026-01-22 09:04:08,519 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-22 09:04:08,978 - api_client - INFO - Request successful
+2026-01-22 09:04:08,978 - monitor - WARNING - No data for 2026-02-19
+2026-01-22 09:04:08,978 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-22 09:04:09,756 - api_client - INFO - Request successful
+2026-01-22 09:04:09,756 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 100%
+2026-01-22 09:04:09,756 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 100% - R$ 8.0
+2026-01-22 09:04:09,773 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 100%
+2026-01-22 09:04:09,773 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 100% - R$ 8.0
+2026-01-22 09:04:10,773 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-21T00:00:00.000Z
+2026-01-22 09:04:11,687 - api_client - INFO - Request successful
+2026-01-22 09:04:11,687 - monitor - WARNING - No data for 2026-02-21
+2026-01-22 09:04:11,687 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-22T00:00:00.000Z
+2026-01-22 09:04:11,951 - api_client - INFO - Request successful
+2026-01-22 09:04:11,951 - monitor - WARNING - No data for 2026-02-22
+2026-01-22 09:04:11,951 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-23T00:00:00.000Z
+2026-01-22 09:04:12,218 - api_client - INFO - Request successful
+2026-01-22 09:04:12,218 - monitor - WARNING - No data for 2026-02-23
+2026-01-22 09:04:12,218 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-24T00:00:00.000Z
+2026-01-22 09:04:12,450 - api_client - INFO - Request successful
+2026-01-22 09:04:12,450 - monitor - WARNING - No data for 2026-02-24
+2026-01-22 09:04:12,450 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-25T00:00:00.000Z
+2026-01-22 09:04:12,739 - api_client - INFO - Request successful
+2026-01-22 09:04:12,739 - monitor - WARNING - No data for 2026-02-25
+2026-01-22 09:04:12,739 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-26T00:00:00.000Z
+2026-01-22 09:04:12,978 - api_client - INFO - Request successful
+2026-01-22 09:04:12,978 - monitor - WARNING - No data for 2026-02-26
+2026-01-22 09:04:12,978 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-27T00:00:00.000Z
+2026-01-22 09:04:13,201 - api_client - INFO - Request successful
+2026-01-22 09:04:13,201 - monitor - WARNING - No data for 2026-02-27
+2026-01-22 09:04:13,201 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-28T00:00:00.000Z
+2026-01-22 09:04:13,511 - api_client - INFO - Request successful
+2026-01-22 09:04:13,511 - monitor - WARNING - No data for 2026-02-28
+2026-01-22 09:04:13,511 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-22 09:04:13,765 - api_client - INFO - Request successful
+2026-01-22 09:04:13,765 - monitor - WARNING - No data for 2026-03-01
+2026-01-22 09:04:13,765 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-22 09:04:14,013 - api_client - INFO - Request successful
+2026-01-22 09:04:14,013 - monitor - WARNING - No data for 2026-03-02
+2026-01-22 09:04:14,013 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-22 09:04:14,228 - api_client - INFO - Request successful
+2026-01-22 09:04:14,228 - monitor - WARNING - No data for 2026-03-03
+2026-01-22 09:04:14,228 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-22 09:04:14,519 - api_client - INFO - Request successful
+2026-01-22 09:04:14,519 - monitor - WARNING - No data for 2026-03-04
+2026-01-22 09:04:14,519 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-22 09:04:14,749 - api_client - INFO - Request successful
+2026-01-22 09:04:14,750 - monitor - WARNING - No data for 2026-03-05
+2026-01-22 09:04:14,750 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-22 09:04:14,969 - api_client - INFO - Request successful
+2026-01-22 09:04:14,969 - monitor - WARNING - No data for 2026-03-06
+2026-01-22 09:04:14,969 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-22 09:04:15,187 - api_client - INFO - Request successful
+2026-01-22 09:04:15,187 - monitor - WARNING - No data for 2026-03-07
+2026-01-22 09:04:15,187 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-22 09:04:15,428 - api_client - INFO - Request successful
+2026-01-22 09:04:15,428 - monitor - WARNING - No data for 2026-03-08
+2026-01-22 09:04:15,428 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-22 09:04:15,678 - api_client - INFO - Request successful
+2026-01-22 09:04:15,678 - monitor - WARNING - No data for 2026-03-09
+2026-01-22 09:04:15,678 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-22 09:04:15,903 - api_client - INFO - Request successful
+2026-01-22 09:04:15,903 - monitor - WARNING - No data for 2026-03-10
+2026-01-22 09:04:15,903 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-22 09:04:16,259 - api_client - INFO - Request successful
+2026-01-22 09:04:16,259 - monitor - WARNING - No data for 2026-03-11
+2026-01-22 09:04:16,259 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-22 09:04:16,505 - api_client - INFO - Request successful
+2026-01-22 09:04:16,505 - monitor - WARNING - No data for 2026-03-12
+2026-01-22 09:04:16,505 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-22 09:04:16,787 - api_client - INFO - Request successful
+2026-01-22 09:04:16,787 - monitor - WARNING - No data for 2026-03-13
+2026-01-22 09:04:16,787 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-22 09:04:17,028 - api_client - INFO - Request successful
+2026-01-22 09:04:17,028 - monitor - WARNING - No data for 2026-03-14
+2026-01-22 09:04:17,028 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-22 09:04:17,303 - api_client - INFO - Request successful
+2026-01-22 09:04:17,303 - monitor - WARNING - No data for 2026-03-15
+2026-01-22 09:04:17,303 - monitor - INFO - Cycle complete. found 4 NEW tickets.
+2026-01-22 09:04:17,303 - notifier - WARNING - Telegram credentials not configured. Skipping notification.
+2026-01-22 09:04:17,303 - Main - INFO - !!! FOUND 4 TICKETS !!!
+2026-01-22 09:04:17,303 - Main - INFO - Check cycle finished in 17.07 seconds.
+2026-01-22 09:04:17,303 - Main - INFO - Waiting 60 minutes for next check...
+2026-01-22 09:05:01,618 - Main - INFO - Stopping monitor...
+2026-01-22 09:10:37,378 - Main - INFO - ============================================================
+2026-01-22 09:10:37,378 - Main - INFO - ID JOVEM MONITOR STARTED
+2026-01-22 09:10:37,378 - Main - INFO - Route: Joao Pessoa - PB -> Irece - BA
+2026-01-22 09:10:37,380 - Main - INFO - Period: 2026-02-15 to 2026-03-15
+2026-01-22 09:10:37,380 - Main - INFO - Interval: 60 minutes
+2026-01-22 09:10:37,380 - Main - INFO - Telegram notification ENABLED
+2026-01-22 09:10:37,380 - Main - INFO - ============================================================
+2026-01-22 09:10:37,380 - Main - INFO - Starting check cycle...
+2026-01-22 09:10:37,380 - monitor - INFO - Checking availability for 29 dates...
+2026-01-22 09:10:37,380 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-15T00:00:00.000Z
+2026-01-22 09:10:38,452 - api_client - INFO - Request successful
+2026-01-22 09:10:38,456 - monitor - WARNING - No data for 2026-02-15
+2026-01-22 09:10:38,456 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-16T00:00:00.000Z
+2026-01-22 09:10:38,700 - api_client - INFO - Request successful
+2026-01-22 09:10:38,700 - monitor - WARNING - No data for 2026-02-16
+2026-01-22 09:10:38,700 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-17T00:00:00.000Z
+2026-01-22 09:10:39,451 - api_client - INFO - Request successful
+2026-01-22 09:10:39,460 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-22 09:10:39,460 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 253.92
+2026-01-22 09:10:39,468 - database - INFO - Ticket saved to DB: 2026-02-17T07:00:00 - 50%
+2026-01-22 09:10:39,468 - monitor - INFO - FOUND NEW! 2026-02-17T07:00:00 - 50% - R$ 258.56
+2026-01-22 09:10:40,468 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-18T00:00:00.000Z
+2026-01-22 09:10:40,839 - api_client - INFO - Request successful
+2026-01-22 09:10:40,839 - monitor - WARNING - No data for 2026-02-18
+2026-01-22 09:10:40,839 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-19T00:00:00.000Z
+2026-01-22 09:10:41,205 - api_client - INFO - Request successful
+2026-01-22 09:10:41,205 - monitor - WARNING - No data for 2026-02-19
+2026-01-22 09:10:41,206 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-20T00:00:00.000Z
+2026-01-22 09:10:41,672 - api_client - INFO - Request successful
+2026-01-22 09:10:41,678 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 100%
+2026-01-22 09:10:41,678 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 100% - R$ 8.0
+2026-01-22 09:10:41,687 - database - INFO - Ticket saved to DB: 2026-02-20T10:33:00 - 100%
+2026-01-22 09:10:41,687 - monitor - INFO - FOUND NEW! 2026-02-20T10:33:00 - 100% - R$ 8.0
+2026-01-22 09:10:42,688 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-21T00:00:00.000Z
+2026-01-22 09:10:43,237 - api_client - INFO - Request successful
+2026-01-22 09:10:43,237 - monitor - WARNING - No data for 2026-02-21
+2026-01-22 09:10:43,237 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-22T00:00:00.000Z
+2026-01-22 09:10:43,468 - api_client - INFO - Request successful
+2026-01-22 09:10:43,468 - monitor - WARNING - No data for 2026-02-22
+2026-01-22 09:10:43,468 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-23T00:00:00.000Z
+2026-01-22 09:10:43,706 - api_client - INFO - Request successful
+2026-01-22 09:10:43,706 - monitor - WARNING - No data for 2026-02-23
+2026-01-22 09:10:43,718 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-24T00:00:00.000Z
+2026-01-22 09:10:44,051 - api_client - INFO - Request successful
+2026-01-22 09:10:44,051 - monitor - WARNING - No data for 2026-02-24
+2026-01-22 09:10:44,051 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-25T00:00:00.000Z
+2026-01-22 09:10:44,452 - api_client - INFO - Request successful
+2026-01-22 09:10:44,452 - monitor - WARNING - No data for 2026-02-25
+2026-01-22 09:10:44,452 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-26T00:00:00.000Z
+2026-01-22 09:10:44,778 - api_client - INFO - Request successful
+2026-01-22 09:10:44,778 - monitor - WARNING - No data for 2026-02-26
+2026-01-22 09:10:44,778 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-27T00:00:00.000Z
+2026-01-22 09:10:45,022 - api_client - INFO - Request successful
+2026-01-22 09:10:45,022 - monitor - WARNING - No data for 2026-02-27
+2026-01-22 09:10:45,022 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-02-28T00:00:00.000Z
+2026-01-22 09:10:45,416 - api_client - INFO - Request successful
+2026-01-22 09:10:45,418 - monitor - WARNING - No data for 2026-02-28
+2026-01-22 09:10:45,418 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-01T00:00:00.000Z
+2026-01-22 09:10:45,757 - api_client - INFO - Request successful
+2026-01-22 09:10:45,757 - monitor - WARNING - No data for 2026-03-01
+2026-01-22 09:10:45,757 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-02T00:00:00.000Z
+2026-01-22 09:10:46,052 - api_client - INFO - Request successful
+2026-01-22 09:10:46,052 - monitor - WARNING - No data for 2026-03-02
+2026-01-22 09:10:46,052 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-03T00:00:00.000Z
+2026-01-22 09:10:46,302 - api_client - INFO - Request successful
+2026-01-22 09:10:46,302 - monitor - WARNING - No data for 2026-03-03
+2026-01-22 09:10:46,302 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-04T00:00:00.000Z
+2026-01-22 09:10:46,601 - api_client - INFO - Request successful
+2026-01-22 09:10:46,601 - monitor - WARNING - No data for 2026-03-04
+2026-01-22 09:10:46,601 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-05T00:00:00.000Z
+2026-01-22 09:10:46,872 - api_client - INFO - Request successful
+2026-01-22 09:10:46,872 - monitor - WARNING - No data for 2026-03-05
+2026-01-22 09:10:46,872 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-06T00:00:00.000Z
+2026-01-22 09:10:47,258 - api_client - INFO - Request successful
+2026-01-22 09:10:47,258 - monitor - WARNING - No data for 2026-03-06
+2026-01-22 09:10:47,258 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-07T00:00:00.000Z
+2026-01-22 09:10:47,569 - api_client - INFO - Request successful
+2026-01-22 09:10:47,569 - monitor - WARNING - No data for 2026-03-07
+2026-01-22 09:10:47,577 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-08T00:00:00.000Z
+2026-01-22 09:10:47,810 - api_client - INFO - Request successful
+2026-01-22 09:10:47,810 - monitor - WARNING - No data for 2026-03-08
+2026-01-22 09:10:47,810 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-09T00:00:00.000Z
+2026-01-22 09:10:48,155 - api_client - INFO - Request successful
+2026-01-22 09:10:48,155 - monitor - WARNING - No data for 2026-03-09
+2026-01-22 09:10:48,155 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-10T00:00:00.000Z
+2026-01-22 09:10:48,389 - api_client - INFO - Request successful
+2026-01-22 09:10:48,389 - monitor - WARNING - No data for 2026-03-10
+2026-01-22 09:10:48,389 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-11T00:00:00.000Z
+2026-01-22 09:10:48,604 - api_client - INFO - Request successful
+2026-01-22 09:10:48,604 - monitor - WARNING - No data for 2026-03-11
+2026-01-22 09:10:48,604 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-12T00:00:00.000Z
+2026-01-22 09:10:48,864 - api_client - INFO - Request successful
+2026-01-22 09:10:48,864 - monitor - WARNING - No data for 2026-03-12
+2026-01-22 09:10:48,866 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-13T00:00:00.000Z
+2026-01-22 09:10:49,102 - api_client - INFO - Request successful
+2026-01-22 09:10:49,102 - monitor - WARNING - No data for 2026-03-13
+2026-01-22 09:10:49,102 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-14T00:00:00.000Z
+2026-01-22 09:10:49,393 - api_client - INFO - Request successful
+2026-01-22 09:10:49,393 - monitor - WARNING - No data for 2026-03-14
+2026-01-22 09:10:49,394 - api_client - INFO - Searching trips: Joao Pessoa - PB -> Irece - BA on 2026-03-15T00:00:00.000Z
+2026-01-22 09:10:49,908 - api_client - INFO - Request successful
+2026-01-22 09:10:49,908 - monitor - WARNING - No data for 2026-03-15
+2026-01-22 09:10:49,908 - monitor - INFO - Cycle complete. found 4 NEW tickets.
+2026-01-22 09:10:50,940 - notifier - INFO - Telegram notification sent successfully.
+2026-01-22 09:10:50,940 - Main - INFO - !!! FOUND 4 TICKETS !!!
+2026-01-22 09:10:50,940 - Main - INFO - Check cycle finished in 13.56 seconds.
+2026-01-22 09:10:50,940 - Main - INFO - Waiting 60 minutes for next check...
+2026-01-22 10:02:15,540 - Main - INFO - Stopping monitor...
