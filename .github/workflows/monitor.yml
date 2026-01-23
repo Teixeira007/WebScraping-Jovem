@@ -2,9 +2,10 @@ name: Monitor ID Jovem Tickets
 
 on:
   schedule:
-    # Runs at 09:00 and 21:00 UTC (adapt as needed for your timezone preference)
-    # 0 */12 * * * runs every 12th hour.
-    - cron: '0 9,21 * * *'
+    # Runs at 12:00 and 00:00 UTC = 09:00 and 21:00 Brazil Time (UTC-3)
+    # Note: GitHub Actions scheduled workflows may have delays up to 15 minutes
+    # and may not run if the repository has low activity
+    - cron: '0 12,0 * * *'
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -47,7 +48,7 @@ jobs:
         python main.py \
           --origin "Irece - BA" \
           --destination "Joao Pessoa - PB" \
-          --start "2026-04-14" \
+          --start "2026-04-11" \
           --end "2026-04-20" \
           --once \
           --telegram-token "$TELEGRAM_TOKEN" \
