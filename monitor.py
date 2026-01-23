@@ -64,7 +64,7 @@ class Monitor:
                     if discount >= 95:
                         is_id_jovem = True
                         benefit_type = "100%"
-                    elif discount >= 45 and discount <= 55:
+                    elif discount >= 45 and discount <= 90:
                         is_id_jovem = True
                         benefit_type = "50%"
                     
