@@ -76,7 +76,12 @@ def main():
             break
         except Exception as e:
             logger.error(f"Unexpected error in main loop: {e}", exc_info=True)
-            time.sleep(60) # Wait a bit before retrying on error
+
+            if args.once:
+                logger.info("Error occurred during one-time run. Exiting.")
+                break
+
+            time.sleep(60) 
 
 if __name__ == "__main__":
     main()
