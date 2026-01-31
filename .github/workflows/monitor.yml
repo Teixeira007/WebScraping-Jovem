@@ -25,28 +25,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Run Monitor - Outbound Trip (João Pessoa → Irecê)
+    - name: Run Monitor
       env:
         TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
       run: |
-        python main.py \
-          --origin "Joao Pessoa - PB" \
-          --destination "Irece - BA" \
-          --start "2026-02-20" \
-          --end "2026-04-13" \
-          --once \
-          --telegram-token "$TELEGRAM_TOKEN" \
-          --telegram-chat-id "$TELEGRAM_CHAT_ID"
-
-        python main.py \
-          --origin "Irece - BA" \
-          --destination "Joao Pessoa - PB" \
-          --start "2026-04-11" \
-          --end "2026-04-20" \
-          --once \
-          --telegram-token "$TELEGRAM_TOKEN" \
-          --telegram-chat-id "$TELEGRAM_CHAT_ID"
+        # Run the executions script
+        python executar.py
 
     
