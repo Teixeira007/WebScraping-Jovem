@@ -52,14 +52,14 @@ def main():
         {
             "origin": "Joao Pessoa - PB",
             "destination": "Irece - BA",
-            "start": "2026-03-21",
-            "end": "2026-06-30"
+            "start": "2026-06-08",
+            "end": "2026-09-30"
         },
         {
             "origin": "Irece - BA",
             "destination": "Joao Pessoa - PB",
-            "start": "2026-04-01",
-            "end": "2026-08-30" # Adjusted end date based on user request "2026-04-20"
+            "start": "2026-06-01",
+            "end": "2026-09-30" # Adjusted end date based on user request "2026-04-20"
         }
     ]
 
