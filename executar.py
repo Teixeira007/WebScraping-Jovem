@@ -60,6 +60,18 @@ def main():
             "destination": "Joao Pessoa - PB",
             "start": "2026-06-01",
             "end": "2026-09-30" # Adjusted end date based on user request "2026-04-20"
+        },
+        {
+            "origin": "Campina Grande - PB",
+            "destination": "Irece - BA",
+            "start": "2026-07-15",
+            "end": "2026-08-31" # Adjusted end date based on user request "2026-04-20"
+        },
+        {
+            "origin": "Irece - BA",
+            "destination": "Campina Grande - PB",
+            "start": "2026-08-25",
+            "end": "2026-09-31" # Adjusted end date based on user request "2026-04-20"
         }
     ]
 
