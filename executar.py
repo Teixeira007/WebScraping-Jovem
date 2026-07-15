@@ -71,7 +71,7 @@ def main():
             "origin": "Irece - BA",
             "destination": "Campina Grande - PB",
             "start": "2026-08-25",
-            "end": "2026-09-31" # Adjusted end date based on user request "2026-04-20"
+            "end": "2026-10-01" # Adjusted end date based on user request "2026-04-20"
         }
     ]
 
